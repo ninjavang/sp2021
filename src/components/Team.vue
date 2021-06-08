@@ -1,6 +1,14 @@
 <template>
-  <section>
-    <span class="team-desc">{{team.desc}}</span>
+  <section class="team-presentation">
+    <span class="fragment highlight-red">
+      {{ team.name }}
+    </span>
+    <span class="fragment fade-in team-desc">
+      {{ team.desc }}
+    </span>
+    <span class="fragment fade-in team-desc">
+      Låt oss presentera...
+    </span>
   </section>
   <section>
     <div class="team-wrapper">
@@ -45,5 +53,15 @@ export default defineComponent({
 .team-wrapper {
   display: flex;
   justify-content: space-between;
+}
+.team-presentation {
+  display: flex !important;
+  flex-direction: column;
+  span:nth-child(2) {
+    margin: 1em 0;
+  }
+  span:nth-child(3) {
+    font-size: 20px;
+  }
 }
 </style>

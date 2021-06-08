@@ -1,12 +1,10 @@
 <template>
-    <section class="rese-section">
-    <span class="fragment fade-in">
-      <span class="fragment highlight-red">
-        Resan
-      </span>
+  <section class="__column">
+    <span class="fragment highlight-red">
+      Resan
     </span>
     <span class="fragment fade-in">
-      Samling 13:00 Arlanda Airport
+      Samling 12:45 Arlanda Airport
     </span>
     <span class="fragment fade-in">
       Flyget avgår 14:25
@@ -15,7 +13,27 @@
       Till..
     </span>
   </section>
+
   <section>
     <span>BARCELONA BABY (lite nice bilder här instead</span>
+  </section>
+
+  <section class="__column">
+    <span class="fragment highlight-red">
+      Vi landar
+    </span>
+    <span class="fragment fade-in">
+      Lätt överförfriskande kliver ut från El Prat airport
+    </span>
+    <span class="fragment fade-in">
+      Där står det en privattransfer väntandes
+    </span>
+    <span class="fragment fade-in">
+      Som tar oss till..
+    </span>
+  </section>
+
+  <section>
+    <iframe class="r-stretch" data-autoplay src="https://www.youtube.com/embed/bwjAotN1pXk?autoplay=1"></iframe>
   </section>
 </template>

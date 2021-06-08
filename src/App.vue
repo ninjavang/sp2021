@@ -5,15 +5,13 @@
       <div class="slides">
         <Intro/>
         <Resan/>
-        <CourseVideo/>
-        <section>
-          <h2>Och lagen?</h2>
-        </section>
+        <Tavlingen/>
         <Team 
           v-for="(team, idx) in teams"
           :key="idx"
           :team="team"
         />
+        <Avslutningen />
         <section>
           <h2>Tack och adjö!</h2>
         </section>
@@ -24,10 +22,11 @@
 
 <script lang="ts">
 import { defineComponent, onMounted, reactive } from 'vue';
-import CourseVideo from '@/components/CourseVideo.vue';
+import Tavlingen from '@/components/Tavlingen.vue';
 import Team from '@/components/Team.vue';
 import Intro from '@/components/Intro.vue';
 import Resan from '@/components/Resan.vue';
+import Avslutningen from '@/components/Avslutningen.vue';
 import Reveal from 'reveal.js';
 import teamData from '@/teams.data';
 
@@ -35,10 +34,11 @@ export default defineComponent({
   name: 'App',
 
   components: {
-    CourseVideo,
+    Tavlingen,
     Intro,
     Resan,
-    Team
+    Team,
+    Avslutningen
   },
 
   setup(props, ctx) {
@@ -72,5 +72,9 @@ export default defineComponent({
 .iframe {
   height: 100%;
   width: 100%;
+}
+.__column {
+  display: flex !important;
+  flex-direction: column;
 }
 </style>
