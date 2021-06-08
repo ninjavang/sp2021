@@ -1,8 +1,11 @@
 <template>
   <section>
+    <span class="team-desc">{{team.desc}}</span>
+  </section>
+  <section>
     <div class="team-wrapper">
       <Player
-        v-for="(player, idx) in players"
+        v-for="(player, idx) in team.players"
         :key="idx"
         :player="player"
       />
@@ -16,8 +19,8 @@ import Player from './Player.vue';
 
 export default defineComponent({
   props: {
-    players: {
-      type: Array,
+    team: {
+      type: Object,
       required: true
     }
   },
@@ -36,6 +39,9 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+.team-desc {
+  white-space: pre-line;
+}
 .team-wrapper {
   display: flex;
   justify-content: space-between;

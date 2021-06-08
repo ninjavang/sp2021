@@ -1,8 +1,11 @@
 <template>
   <div class="player-wrapper">
     <img class="img" :data-src="`static/img/${player.id}.png`">
-    <h4> {{player.firstname}} '{{player.nickname}}' {{player.lastname}}</h4>
-    <p class="desc"> {{player.desc}} </p>
+    <div class="player-text">
+      <h4 class="player-text-title"> {{player.firstname}} '{{player.nickname}}' {{player.lastname}}</h4>
+      <p class="player-text-desc"> {{player.desc}} </p>
+    </div>
+    
   </div>
 </template>
 <script lang="ts">
@@ -27,12 +30,20 @@ export default defineComponent({
   flex-direction: column;
   align-items: center;
   align-content: center;
+  width: 40%;
 }
 .img {
-  width: 400px;
-  height: 300px;
+  width: 100%;
 }
-.desc {
-  font-size: 22px;
+.player-text {
+  max-width: 400px;
+  text-align: justify;
+}
+.player-text-title {
+  font-size: 24px;
+
+}
+.player-text-desc {
+  font-size: 16px;
 }
 </style>

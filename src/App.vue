@@ -4,9 +4,7 @@
     <div class="reveal">
       <div class="slides">
         <Intro/>
-        <section>
-          <h2 class="r-fit-text">Var ska vi va?</h2>
-        </section>
+        <Resan/>
         <CourseVideo/>
         <section>
           <h2>Och lagen?</h2>
@@ -14,7 +12,7 @@
         <Team 
           v-for="(team, idx) in teams"
           :key="idx"
-          :players="team"
+          :team="team"
         />
         <section>
           <h2>Tack och adjö!</h2>
@@ -29,6 +27,7 @@ import { defineComponent, onMounted, reactive } from 'vue';
 import CourseVideo from '@/components/CourseVideo.vue';
 import Team from '@/components/Team.vue';
 import Intro from '@/components/Intro.vue';
+import Resan from '@/components/Resan.vue';
 import Reveal from 'reveal.js';
 import teamData from '@/teams.data';
 
@@ -38,6 +37,7 @@ export default defineComponent({
   components: {
     CourseVideo,
     Intro,
+    Resan,
     Team
   },
 
