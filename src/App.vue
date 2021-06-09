@@ -222,7 +222,7 @@ export default defineComponent({
           this.tryNext(idx, 3000);
           break;
         case 25: case 26: case 27:
-          this.tryNext(idx, 3000);
+          this.tryNext(idx, 4000);
           break;
         case 28: case 29:
           await sleep(1500);
