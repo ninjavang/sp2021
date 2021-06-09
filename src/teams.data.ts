@@ -23,8 +23,8 @@ const teams: Team[] = [
         firstname: "Peder",
         lastname: "Forsell",
         nickname: "Patrick Reed",
-        desc: "Pappa peder, känd för att aldrig inte hittat sin boll när han hamnat i skogen. Ibland hittar han dem så snabbt att de byter logga t.o.m. " +
-              "Men mitt i allt detta letande ska man inte glömma att det gömmer sig en formidabel golfare där inne." +
+        desc: "Känd för att aldrig inte hittat sin boll när den hamnat i skogen." +
+              "Gömmer sig ändå en formidabel golfare där djupt inne." +
               "Frågan är bara om han kommer få in de timmar som krävs under sommaren för att locka fram honom?"
       },
       {
@@ -33,7 +33,7 @@ const teams: Team[] = [
         lastname: "Runströmer",
         nickname: "McIlroy",
         desc: "Den evige unge Jacob kan slå väldigt fina slag. Han kan även slå riktigt fula slag. Likt sin lagkamrat finns det en bra nivå där, " +
-              "men kommer krävas lite golfande för att den ska titta fram."
+              "men kommer han lägga tiden som krävs för att hitta den?"
       }
     ]
   },
@@ -74,14 +74,14 @@ const teams: Team[] = [
         id: "dennis",
         firstname: "Dennis",
         lastname: "Malmstem",
-        nickname: "Deschambou",
+        nickname: "Dechambeau",
         desc: "Dennis pappa slår längre än alla andras pappor i det här gänget, men gör Dennis det? Det är den stora frågan."
       }
     ]
   },
   {
     name: "The Heavy Drinkers",
-    desc: 'En stabil carry och en motiverad höghandikappare brukar ofta vara vägen till framgång.\nFrågan är om de har vad som krävs för att avsluta Carl och Joels segersvit?',
+    desc: 'En stabil carry och en motiverad höghandikappare brukar ofta vara vägen till framgång.\nFår man gå runt med öl på banan kan det dock sänka dem..',
     players:   [
       {
         id: "arvid",
@@ -102,7 +102,8 @@ const teams: Team[] = [
   },
   {
     name: "The Champs",
-    desc: 'Le Champs. Mycket mer kan man inte säga efter 2 starka år som vinnare i nacken. I år kommer vi dock tvinga i dem samma mängd alkohol som resten, då vi tidigare noterat vissa ouppskattade tendenser där.',
+    desc: 'Le Champs. Mycket mer kan man inte säga efter 2 starka år som vinnare i nacken. Inte de roligaste att spela med då de vägrar dricka och inte pratar med en, men fin golf spelar de allt. ' +
+          "Kommer de lyckas hålla kvar i bucklan ett år till?",
     players: [
       {
         id: "joel",
