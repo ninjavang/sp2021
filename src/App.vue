@@ -112,19 +112,44 @@ export default defineComponent({
       switch (idx) {
         case 1:
           this.playAnimo();
-          await sleep(1000);
+          await sleep(2500);
           this.showImage = true;
           await sleep(2000);
           this.showText = true;
-          await sleep(1500);
+          await sleep(2500);
           this.showYear = true;
-          await sleep(4000);
+          
+          this.tryNext(idx, 3500);
 
-          if (this.index == 1) Reveal.next();
-
+          break;
+        case 2:
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          this.tryNext(idx, 2000);
+          break;
+        case 3:
+          this.tryNext(idx, 2500);
+          break;
+        case 4:
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          this.tryNext(idx, 2000);
           break;
         case 5:
           this.stopAnimo();
+          this.tryNext(idx, 51000)
           break;
         case 6:
           this.playChampions();
@@ -136,6 +161,12 @@ export default defineComponent({
           this.playDeschantee();
           break;
         default: break;
+      }
+    },
+    async tryNext(idx: number, ms: number) {
+      await sleep(ms);
+      if (this.index == idx) {
+        Reveal.next();
       }
     }
   }
