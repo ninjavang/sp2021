@@ -33,7 +33,13 @@
     </span>
   </section>
 
-  <section>
-    <iframe class="r-stretch" data-autoplay src="https://www.youtube.com/embed/bwjAotN1pXk?autoplay=1"></iframe>
+  <section class="__fullscreen">
+    <iframe 
+      class="r-stretch"
+      data-src="https://www.youtube.com/embed/bwjAotN1pXk?autoplay=1"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+    ></iframe>
   </section>
 </template>

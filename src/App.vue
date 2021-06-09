@@ -78,4 +78,5 @@ export default defineComponent({
   display: flex !important;
   flex-direction: column;
 }
+
 </style>
