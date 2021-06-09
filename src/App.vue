@@ -41,16 +41,17 @@ export default defineComponent({
     Avslutningen
   },
 
-  setup(props, ctx) {
-    onMounted(() => {
-      Reveal.initialize({
-        autoPlayMedia: true,
-        controlsLayout: 'edges'
-      });
-    });
-    const teams = reactive(teamData);
+  data() {
+    return {
+      teams: teamData
+    }
+  },
 
-    return { teams };
+  mounted() {
+    Reveal.initialize({
+      autoPlayMedia: true,
+      controlsLayout: 'edges'
+    });
   }
 });
 </script>
