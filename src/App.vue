@@ -153,12 +153,85 @@ export default defineComponent({
           break;
         case 6:
           this.playChampions();
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          this.tryNext(idx, 2000);
           break;
+        case 7: case 8:
+          this.tryNext(idx, 3000);
+          break;
+        case 9:
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          this.tryNext(idx, 2000);
+          break;
+        case 10: case 11:
+          this.tryNext(idx, 3000);
+          break;
+        case 12:
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          this.tryNext(idx, 2000);
+          break;
+        case 13: case 15: case 17: case 19: case 21:
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(3500);
+          Reveal.nextFragment();
+          this.tryNext(idx, 2000);
+          break;
+        case 14: case 16: case 18: case 20: case 22:
+          this.tryNext(idx, 10000);
+          break
         case 23:
           this.stopChampions();
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          this.tryNext(idx, 2000);
           break;
         case 24:
           this.playDeschantee();
+          this.tryNext(idx, 3000);
+          break;
+        case 25: case 26: case 27:
+          this.tryNext(idx, 3000);
+          break;
+        case 28: case 29:
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          this.tryNext(idx, 2000);
           break;
         default: break;
       }
