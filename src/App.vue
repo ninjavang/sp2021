@@ -189,6 +189,8 @@ export default defineComponent({
           Reveal.nextFragment();
           await sleep(1500);
           Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment(); 
           this.tryNext(idx, 2000);
           break;
         case 13: case 15: case 17: case 19: case 21:
@@ -201,7 +203,7 @@ export default defineComponent({
           this.tryNext(idx, 2000);
           break;
         case 14: case 16: case 18: case 20: case 22:
-          this.tryNext(idx, 10000);
+          this.tryNext(idx, 15000);
           break
         case 23:
           this.stopChampions();
