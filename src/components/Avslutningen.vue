@@ -14,24 +14,37 @@
     </span>
   </section>
 
-  <section>
-    Bild på hotell
+  <section data-background-image="static/img/beachclub.jpg">
+
   </section>
 
-  <section>
-    Bild på stökigt uteliv i Barcelona
+  <section data-background-image="static/img/nightlife.jpg">
+
   </section>
 
-  <section>
-    Bild på stökigt uteliv i Barcelona
+  <section data-background-image="static/img/nightlife2.jpg">
+
+  </section>
+  <section data-background-image="static/img/opium.jpg">
+  
   </section>
 
-  <section>
-    Bild på stökigt uteliv i Barcelona
-  </section>
-
-  <section>
-    Avslutningsmiddag hemlig plats
+  <section class="__column">
+    <span class="fragment highlight-red">
+      Avslutningsmiddag
+    </span>
+    <span class="fragment fade-in">
+      Serveras i
+    </span>
+    <span class="fragment fade-in">
+      Barcelona City
+    </span>
+    <span class="fragment fade-in">
+      Plats
+    </span>
+    <span class="fragment fade-in">
+      TBA
+    </span>
   </section>
 
   <section class="__column">

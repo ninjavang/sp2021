@@ -14,8 +14,8 @@
     </span>
   </section>
 
-  <section>
-    <span>BARCELONA BABY (lite nice bilder här instead</span>
+  <section data-background-image="static/img/barcelona.jpg">
+    <span>Barcelona</span>
   </section>
 
   <section class="__column">
