@@ -1,38 +1,49 @@
 <template>
   <section class="__column">
     <span class="fragment highlight-red">
-      Dag 1
+      Single tuneringen
     </span>
     <span class="fragment fade-in">
-      Singel tuneringen
+      Tee time Fredag 09:30-09:50 Lumine Hills
     </span>
     <span class="fragment fade-in">
-      Tee time 09:30-09:50 Lumine Hills
+      Info
+    </span>
+    <span class="fragment fade-in">
+      Mer info
     </span>
   </section>
-
+  <section class="__column">
+    <span>
+      Bild på Lumine Hills
+    </span>
+  </section>
+  <section class="__column">
+    <span>
+      En till bild på Lumine Hills
+    </span>
+  </section>
   <section class="__column">
     <span class="fragment highlight-red">
-      Dag 2
+      Sommarpokalen
     </span>
     <span class="fragment fade-in">
       Sommarpokalens första tävlingsdag
     </span>
     <span class="fragment fade-in">
-      Tee time 10:20-10:40 Lumine Lakes
+      Fredag 10:20-10:40 Lumine Lakes
+    </span>
+      <span class="fragment fade-in">
+      Lördag 10:10-10:30 Lumine Lakes
     </span>
   </section>
 
   <section class="__column">
-    <span class="fragment highlight-red">
-      Dag 3
-    </span>
-    <span class="fragment fade-in">
-      Sommarpokalens andra tävlingsdag
-    </span>
-    <span class="fragment fade-in">
-      Tee time 10:10-10:30 Lumine Lakes
-    </span>
+    <span>Bild på Lakes</span>
+  </section>
+
+  <section class="__column">
+    <span>En till bild på Lakes</span>
   </section>
 
   <section class="__column">

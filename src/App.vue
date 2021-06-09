@@ -9,10 +9,10 @@
     <audio autoplay="autoplay" id="music3">
       <source src="static/audio/champions.mp3">
     </audio>
+
     <div class="reveal">
       <div class="slides">
-        <Intro />
-        <Sommarpokalen2021
+        <Intro 
           :showImage="showImage"
           :showText="showText"
           :showYear="showYear"
@@ -38,7 +38,6 @@ import { defineComponent, onMounted, reactive } from 'vue';
 import Tavlingen from '@/components/Tavlingen.vue';
 import Team from '@/components/Team.vue';
 import Intro from '@/components/Intro.vue';
-import Sommarpokalen2021 from '@/components/Sommarpokalen2021.vue';
 import Resan from '@/components/Resan.vue';
 import Avslutningen from '@/components/Avslutningen.vue';
 import Reveal from 'reveal.js';
@@ -55,7 +54,6 @@ export default defineComponent({
     Resan,
     Team,
     Avslutningen,
-    Sommarpokalen2021
   },
 
   data() {
@@ -131,10 +129,10 @@ export default defineComponent({
         case 6:
           this.playChampions();
           break;
-        case 20:
+        case 23:
           this.stopChampions();
           break;
-        case 21:
+        case 24:
           this.playDeschantee();
           break;
         default: break;

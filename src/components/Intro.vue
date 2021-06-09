@@ -12,13 +12,47 @@
     <span>
       Skulle du tycka det går för segt kan du alltid trycka "space" för att hoppa vidare.
     </span>
-    <span class="fragment highlight-red">
+    <span class="highlight-red">
       Press "Space" to continue..
     </span>
   </section>
+
+  <section class="r-stretch" data-transition="fade-in" data-background-image="static/gif/tenor.gif">
+    <div class="r-stretch">
+      <img class="logo" data-src="static/img/logo.png"  v-show="showImage" alt="">
+      <p v-show="showText">Sommarpokalen</p>
+      <p v-show="showYear">2021</p>
+    </div>
+  </section>
 </template>
+<script lang="ts">
+import { defineComponent } from 'vue';
+import Reveal from 'reveal.js';
+
+export default defineComponent({
+  name: 'Intro',
+  props: {
+    showImage: {
+      type: Boolean,
+      default: false
+    },
+    showText: {
+      type: Boolean,
+      default: false
+    },
+    showYear: {
+      type: Boolean,
+      default: false
+    }
+  }
+});
+</script>
 
 <style lang="scss" scoped>
+.logo {
+  width: 50%;
+}
+
 .rese-section {
   display: flex;
   flex-direction: column;
