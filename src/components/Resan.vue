@@ -33,7 +33,7 @@
     </span>
   </section>
 
-  <section class="__fullscreen">
+  <section>
     <iframe 
       class="r-stretch"
       data-src="https://www.youtube.com/embed/bwjAotN1pXk?autoplay=1"
@@ -43,3 +43,11 @@
     ></iframe>
   </section>
 </template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'Intro'
+});
+</script>

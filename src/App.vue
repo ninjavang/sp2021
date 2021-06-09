@@ -1,9 +1,19 @@
 <template>
   <div class="app">
-    <span></span>
+    <audio autoplay="autoplay" id="music1">
+      <source src="static/audio/ameno.mp3">
+    </audio>
+    <audio autoplay="autoplay" id="music2">
+      <source src="static/audio/desenchantee.mp3">
+    </audio>
     <div class="reveal">
       <div class="slides">
-        <Intro/>
+        <Intro />
+        <Sommarpokalen2021
+          :showImage="showImage"
+          :showText="showText"
+          :showYear="showYear"
+        />
         <Resan/>
         <Tavlingen/>
         <Team 
@@ -25,10 +35,13 @@ import { defineComponent, onMounted, reactive } from 'vue';
 import Tavlingen from '@/components/Tavlingen.vue';
 import Team from '@/components/Team.vue';
 import Intro from '@/components/Intro.vue';
+import Sommarpokalen2021 from '@/components/Sommarpokalen2021.vue';
 import Resan from '@/components/Resan.vue';
 import Avslutningen from '@/components/Avslutningen.vue';
 import Reveal from 'reveal.js';
 import teamData from '@/teams.data';
+
+const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
 export default defineComponent({
   name: 'App',
@@ -38,20 +51,72 @@ export default defineComponent({
     Intro,
     Resan,
     Team,
-    Avslutningen
+    Avslutningen,
+    Sommarpokalen2021
   },
 
   data() {
     return {
-      teams: teamData
+      teams: teamData,
+      showImage: false,
+      showText: false,
+      showYear: false
     }
   },
 
   mounted() {
     Reveal.initialize({
       autoPlayMedia: true,
-      controlsLayout: 'edges'
+      controls: false,
+     // disableLayout: true
     });
+
+
+    Reveal.on('slidechanged', async (ev: any) => {
+      console.log('index: ' + ev.indexh)
+      switch (ev.indexh) {
+        case 1:
+          this.playAnimo();
+          await sleep(1000);
+          this.showImage = true;
+          await sleep(2000);
+          this.showText = true;
+          await sleep(1500);
+          this.showYear = true;
+          await sleep(4000);
+          Reveal.next();
+
+          break;
+        case 5:
+          this.stopAnimo();
+          break;
+        case 21:
+          this.playDeschantee();
+          break;
+        default: break;
+      }
+    });
+  },
+
+  methods: {
+    playAnimo() {
+      var audio = document.getElementById("music1") as HTMLAudioElement;
+      if (audio) {
+        audio.play();
+      }
+    },
+    stopAnimo() {
+      var audio = document.getElementById("music1") as HTMLAudioElement;
+      if (audio) {
+        audio.pause();
+      }
+    },
+    playDeschantee() {
+      var audio = document.getElementById("music2") as HTMLAudioElement;
+      if (audio) {
+        audio.play();
+      }
+    }
   }
 });
 </script>
@@ -77,6 +142,9 @@ export default defineComponent({
 .__column {
   display: flex !important;
   flex-direction: column;
+  /* justify-content: center;
+  align-items: center;
+  height: 100%; */
 }
 
 </style>

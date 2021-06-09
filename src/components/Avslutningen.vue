@@ -26,7 +26,7 @@
 
   </section>
   <section data-background-image="static/img/opium.jpg">
-  
+
   </section>
 
   <section class="__column">
