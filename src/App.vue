@@ -6,6 +6,9 @@
     <audio autoplay="autoplay" id="music2">
       <source src="static/audio/desenchantee.mp3">
     </audio>
+    <audio autoplay="autoplay" id="music3">
+      <source src="static/audio/champions.mp3">
+    </audio>
     <div class="reveal">
       <div class="slides">
         <Intro />
@@ -60,42 +63,18 @@ export default defineComponent({
       teams: teamData,
       showImage: false,
       showText: false,
-      showYear: false
+      showYear: false,
+      index: 0
     }
   },
 
   mounted() {
     Reveal.initialize({
       autoPlayMedia: true,
-      controls: false,
-     // disableLayout: true
+      controls: false
     });
 
-
-    Reveal.on('slidechanged', async (ev: any) => {
-      console.log('index: ' + ev.indexh)
-      switch (ev.indexh) {
-        case 1:
-          this.playAnimo();
-          await sleep(1000);
-          this.showImage = true;
-          await sleep(2000);
-          this.showText = true;
-          await sleep(1500);
-          this.showYear = true;
-          await sleep(4000);
-          Reveal.next();
-
-          break;
-        case 5:
-          this.stopAnimo();
-          break;
-        case 21:
-          this.playDeschantee();
-          break;
-        default: break;
-      }
-    });
+    Reveal.on('slidechanged', async (ev: any) => this.onIndexChange(ev.indexh));
   },
 
   methods: {
@@ -111,10 +90,54 @@ export default defineComponent({
         audio.pause();
       }
     },
+    playChampions() {
+      var audio = document.getElementById("music3") as HTMLAudioElement;
+      if (audio) {
+        audio.play();
+      }
+    },
+    stopChampions() {
+      var audio = document.getElementById("music3") as HTMLAudioElement;
+      if (audio) {
+        audio.pause();
+      }
+    },
     playDeschantee() {
       var audio = document.getElementById("music2") as HTMLAudioElement;
       if (audio) {
         audio.play();
+      }
+    },
+    async onIndexChange(idx: number) {
+      this.index = idx;
+      console.log(idx);
+      switch (idx) {
+        case 1:
+          this.playAnimo();
+          await sleep(1000);
+          this.showImage = true;
+          await sleep(2000);
+          this.showText = true;
+          await sleep(1500);
+          this.showYear = true;
+          await sleep(4000);
+
+          if (this.index == 1) Reveal.next();
+
+          break;
+        case 5:
+          this.stopAnimo();
+          break;
+        case 6:
+          this.playChampions();
+          break;
+        case 20:
+          this.stopChampions();
+          break;
+        case 21:
+          this.playDeschantee();
+          break;
+        default: break;
       }
     }
   }
