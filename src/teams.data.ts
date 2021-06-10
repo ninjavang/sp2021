@@ -32,7 +32,7 @@ const teams: Team[] = [
         firstname: "Jacob",
         lastname: "Runströmer",
         nickname: "McIlroy",
-        desc: "Den evige unge Jacob kan slå väldigt fina slag. Han kan även slå riktigt fula slag. Likt sin lagkamrat finns det en bra nivå där, " +
+        desc: "Den evigt unge Jacob kan slå väldigt fina slag. Han kan även slå riktigt fula slag. Likt sin lagkamrat finns det en bra nivå där, " +
               "men kommer krävas lite golfande för att den ska titta fram."
       }
     ]
@@ -73,9 +73,10 @@ const teams: Team[] = [
       {
         id: "dennis",
         firstname: "Dennis",
-        lastname: "Malmstem",
+        lastname: "Malmsten",
         nickname: "Deschambou",
-        desc: "Dennis pappa slår längre än alla andras pappor i det här gänget, men gör Dennis det? Det är den stora frågan."
+        desc: "Årets nyförvärv till SP 2021" + 
+        "Dennis pappa slår längre än alla andras pappor i det här gänget, men gör Dennis det? Det är den stora frågan."
       }
     ]
   },

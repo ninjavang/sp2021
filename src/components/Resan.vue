@@ -18,7 +18,7 @@
     <span>Barcelona</span>
   </section>
 
-  <section class="__column">
+  <section class="__column" data-background-image="static/img/Transport-Barcelona.jpg">
     <span class="fragment highlight-red">
       Vi landar
     </span>

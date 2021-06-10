@@ -106,6 +106,13 @@ export default defineComponent({
         audio.play();
       }
     },
+    stopDeschentee() {
+      var audio = document.getElementById("music2") as HTMLAudioElement;
+      if (audio) {
+        audio.pause();
+      }
+    },
+
     async onIndexChange(idx: number) {
       this.index = idx;
       console.log(idx);
@@ -131,21 +138,21 @@ export default defineComponent({
           Reveal.nextFragment();
           await sleep(1500);
           Reveal.nextFragment();
-          this.tryNext(idx, 2000);
+          this.tryNext(idx, 3500);
           break;
         case 3:
-          this.tryNext(idx, 2500);
+          this.tryNext(idx, 4000);
           break;
         case 4:
-          await sleep(1500);
+          await sleep(2000);
           Reveal.nextFragment();
-          await sleep(1500);
+          await sleep(2000);
           Reveal.nextFragment();
-          await sleep(1500);
+          await sleep(2000);
           Reveal.nextFragment();
-          await sleep(1500);
+          await sleep(2000);
           Reveal.nextFragment();
-          this.tryNext(idx, 2000);
+          this.tryNext(idx, 3000);
           break;
         case 5:
           this.stopAnimo();
@@ -155,7 +162,7 @@ export default defineComponent({
           this.playChampions();
           await sleep(1500);
           Reveal.nextFragment();
-          await sleep(1500);
+          await sleep(7000);
           Reveal.nextFragment();
           await sleep(1500);
           Reveal.nextFragment();
@@ -234,6 +241,7 @@ export default defineComponent({
           await sleep(1500);
           Reveal.nextFragment();
           this.tryNext(idx, 2000);
+          this.stopDeschentee();
           break;
         default: break;
       }
@@ -269,9 +277,9 @@ export default defineComponent({
 .__column {
   display: flex !important;
   flex-direction: column;
-  /* justify-content: center;
+  justify-content: center;
   align-items: center;
-  height: 100%; */
+  height: 100%;
 }
 
 </style>
