@@ -60,7 +60,7 @@
     <span class="fragment fade-in" data-fragment-index="2">
       Inför årets tävling har vi valt att återgå till förskapade lag.
     </span>
-    <span class="fragment fade-in-then-semi-out" style="margin: 0.5em 0;" data-fragment-index="3">
+    <span class="fragment fade-in" style="margin: 0.5em 0;" data-fragment-index="3">
       Dels för att att handikappsgapet är lite för stort i år.
     </span>
     <span class="fragment fade-in" data-fragment-index="4">
