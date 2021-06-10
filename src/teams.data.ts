@@ -75,7 +75,7 @@ const teams: Team[] = [
         firstname: "Dennis",
         lastname: "Malmsten",
         nickname: "Deschambou",
-        desc: "Årets nyförvärv till SP 2021" + 
+        desc: "Årets nyförvärv till SP 2021! " + 
         "Dennis pappa slår längre än alla andras pappor i det här gänget, men gör Dennis det? Det är den stora frågan."
       }
     ]

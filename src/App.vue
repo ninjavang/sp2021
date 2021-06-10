@@ -123,6 +123,7 @@ export default defineComponent({
       console.log(idx);
       switch (idx) {
         case 1:
+        /** Intro */
           this.playAnimo();
           await sleep(2500);
           this.showImage = true;
@@ -144,6 +145,7 @@ export default defineComponent({
           await this.tryNext(idx, 3500);
           break;
         case 3:
+        /** YOUTUBE LUMINE  */
           await this.tryNext(idx, 6000);
           break;
         case 4:
@@ -171,7 +173,7 @@ export default defineComponent({
           Reveal.nextFragment();
           await sleep(1500);
           Reveal.nextFragment();
-          await this.tryNext(idx, 7000);
+          await this.tryNext(idx, 8000);
           break;
         case 7: case 8:
           this.tryNext(idx, 3000);
@@ -185,7 +187,7 @@ export default defineComponent({
           Reveal.nextFragment();
           await sleep(1500);
           Reveal.nextFragment();
-          await this.tryNext(idx, 7000);
+          await this.tryNext(idx, 8000);
           break;
         case 10: case 11:
           this.tryNext(idx, 3000);
@@ -215,7 +217,7 @@ export default defineComponent({
           await this.tryNext(idx, 2000);
           break;
         case 14: case 16: case 18: case 20: case 22:
-          await this.tryNext(idx, 15000);
+          await this.tryNext(idx, 18000);
           break
         case 23:
           this.stopChampions();
