@@ -23,8 +23,8 @@ const teams: Team[] = [
         firstname: "Peder",
         lastname: "Forsell",
         nickname: "Patrick Reed",
-        desc: "Känd för att aldrig inte hittat sin boll när den hamnat i skogen." +
-              "Gömmer sig ändå en formidabel golfare där djupt inne." +
+        desc: "Pappa peder, känd för att aldrig inte hittat sin boll när han hamnat i skogen. Ibland hittar han dem så snabbt att de byter logga t.o.m. " +
+              "Men mitt i allt detta letande ska man inte glömma att det gömmer sig en formidabel golfare där inne." +
               "Frågan är bara om han kommer få in de timmar som krävs under sommaren för att locka fram honom?"
       },
       {
@@ -32,13 +32,8 @@ const teams: Team[] = [
         firstname: "Jacob",
         lastname: "Runströmer",
         nickname: "McIlroy",
-<<<<<<< HEAD
-        desc: "Den evigt unge Jacob kan slå väldigt fina slag. Han kan även slå riktigt fula slag. Likt sin lagkamrat finns det en bra nivå där, " +
-              "men kommer krävas lite golfande för att den ska titta fram."
-=======
         desc: "Den evige unge Jacob kan slå väldigt fina slag. Han kan även slå riktigt fula slag. Likt sin lagkamrat finns det en bra nivå där, " +
-              "men kommer han lägga tiden som krävs för att hitta den?"
->>>>>>> 21f2d5e9c213f887947692b8429d83e05ec2dfe3
+              "men kommer krävas lite golfande för att den ska titta fram."
       }
     ]
   },
@@ -78,22 +73,15 @@ const teams: Team[] = [
       {
         id: "dennis",
         firstname: "Dennis",
-<<<<<<< HEAD
-        lastname: "Malmsten",
-        nickname: "Deschambou",
-        desc: "Årets nyförvärv till SP 2021" + 
-        "Dennis pappa slår längre än alla andras pappor i det här gänget, men gör Dennis det? Det är den stora frågan."
-=======
         lastname: "Malmstem",
-        nickname: "Dechambeau",
+        nickname: "Deschambou",
         desc: "Dennis pappa slår längre än alla andras pappor i det här gänget, men gör Dennis det? Det är den stora frågan."
->>>>>>> 21f2d5e9c213f887947692b8429d83e05ec2dfe3
       }
     ]
   },
   {
     name: "The Heavy Drinkers",
-    desc: 'En stabil carry och en motiverad höghandikappare brukar ofta vara vägen till framgång.\nFår man gå runt med öl på banan kan det dock sänka dem..',
+    desc: 'En stabil carry och en motiverad höghandikappare brukar ofta vara vägen till framgång.\nFrågan är om de har vad som krävs för att avsluta Carl och Joels segersvit?',
     players:   [
       {
         id: "arvid",
@@ -114,8 +102,7 @@ const teams: Team[] = [
   },
   {
     name: "The Champs",
-    desc: 'Le Champs. Mycket mer kan man inte säga efter 2 starka år som vinnare i nacken. Inte de roligaste att spela med då de vägrar dricka och inte pratar med en, men fin golf spelar de allt. ' +
-          "Kommer de lyckas hålla kvar i bucklan ett år till?",
+    desc: 'Le Champs. Mycket mer kan man inte säga efter 2 starka år som vinnare i nacken. I år kommer vi dock tvinga i dem samma mängd alkohol som resten, då vi tidigare noterat vissa ouppskattade tendenser där.',
     players: [
       {
         id: "joel",

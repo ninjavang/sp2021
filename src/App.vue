@@ -196,8 +196,7 @@ export default defineComponent({
           Reveal.nextFragment();
           await sleep(1500);
           Reveal.nextFragment();
-          await sleep(1500);
-          Reveal.nextFragment(); 
+
           this.tryNext(idx, 2000);
           break;
         case 13: case 15: case 17: case 19: case 21:
@@ -250,6 +249,8 @@ export default defineComponent({
       await sleep(ms);
       if (this.index == idx) {
         Reveal.next();
+      } else {
+        console.log("Index: " + idx + " didn't match expected: " + this.index);
       }
     }
   }
