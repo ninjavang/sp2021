@@ -25,8 +25,13 @@
           :team="team"
         />
         <Avslutningen />
-        <section>
+        <section class="__column">
           <h2>Tack och adjö!</h2>
+          <a href="https://www.lumine.com/">Lumine</a>
+          <a href="https://www.youtube.com/watch?v=9c5BIWb4Tew">Lakes</a>
+          <a href="https://www.youtube.com/watch?v=DvnID-WiSaY">Hills</a>
+          <a href=https://www.tripadvisor.se/Hotel_Review-g580328-d260580-Reviews-Sol_Port_Cambrils-Cambrils_Baix_Camp_Costa_Dorada_Province_of_Tarragona_Catalonia.html>Hotellet</a>
+          <span style="margin: 1em 0 0 0; font-size: 18px;">Tryck "O" om ni vill bläddra bland slides</span>
         </section>
       </div>
     </div>

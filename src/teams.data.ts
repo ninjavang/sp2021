@@ -23,9 +23,9 @@ const teams: Team[] = [
         firstname: "Peder",
         lastname: "Forsell",
         nickname: "Patrick Reed",
-        desc: "Pappa peder, känd för att aldrig inte hittat sin boll när han hamnat i skogen. Ibland hittar han dem så snabbt att de byter logga t.o.m. " +
-              "Men mitt i allt detta letande ska man inte glömma att det gömmer sig en formidabel golfare där inne." +
-              "Frågan är bara om han kommer få in de timmar som krävs under sommaren för att locka fram honom?"
+        desc: "Känd för att aldrig inte hittat sin boll när han hamnat i skogen. " +
+              "Men även känd för att slå ett och annat drömslag." +
+              "Frågan är bara om han kommer lägga de timmarna som krävs för att väcka golfguden inom sig?"
       },
       {
         id: "jacob",
@@ -33,7 +33,7 @@ const teams: Team[] = [
         lastname: "Runströmer",
         nickname: "McIlroy",
         desc: "Den evigt unge Jacob kan slå väldigt fina slag. Han kan även slå riktigt fula slag. Likt sin lagkamrat finns det en bra nivå där, " +
-              "men kommer krävas lite golfande för att den ska titta fram."
+              "men det kommer krävas lite golfande för att den ska titta fram."
       }
     ]
   },
@@ -46,15 +46,15 @@ const teams: Team[] = [
         firstname: "David",
         lastname: "Barklöf",
         nickname: "Tiger",
-        desc: "Ständigt skadade David är egentligen bäst av alla på golf. När han inte har ont i ryggen. Eller ont i benent. Eller är bakfull." +
-              " Eller är allt av det där samtidigt. Skulle han slå av sig de problemen tror vi på en comeback alá Tiger 2020."
+        desc: "Ständigt skadade David är egentligen bäst av alla på golf. När han inte har ont i ryggen. Eller ont i benet. Eller är bakfull." +
+              " Eller är allt av det där samtidigt. Skulle han bli kvitt de problemen tror vi på en comeback alá Tiger 2019."
       },
       {
         id: "alfred",
         firstname: "Alfred",
         lastname: "Runow",
         nickname: "Kevin Na",
-        desc: "Alfred kan spela riktigt fin golf, men kan ibland överanalysera lite, vilket tenderar till att leda till en liten duff. " +
+        desc: "Alfred kan spela riktigt fin golf, men kan ibland överanalysera lite innan han slår, vilket tenderar till att leda till en liten duff. " +
               "Kan Alfred bli fri från hjärnspökerna vet vi att det ligger en farlig golfare där bakom och väntar."
       }
     ]
@@ -82,7 +82,7 @@ const teams: Team[] = [
   },
   {
     name: "The Heavy Drinkers",
-    desc: 'En stabil carry och en motiverad höghandikappare brukar ofta vara vägen till framgång.\nFrågan är om de har vad som krävs för att avsluta Carl och Joels segersvit?',
+    desc: 'En stabil carry och en motiverad höghandikappare brukar ofta vara vägen till framgång.\nSäljs det öl på banan finns det dock en risk för kollaps.',
     players:   [
       {
         id: "arvid",
@@ -103,21 +103,21 @@ const teams: Team[] = [
   },
   {
     name: "The Champs",
-    desc: 'Le Champs. Mycket mer kan man inte säga efter 2 starka år som vinnare i nacken. I år kommer vi dock tvinga i dem samma mängd alkohol som resten, då vi tidigare noterat vissa ouppskattade tendenser där.',
+    desc: 'Le Champs. Mycket mer kan man inte säga efter 3 starka år som vinnare i nacken. Dricker lite mindre, pratar lite mindre än alla andra. Frågan är om de slappnar av lite det här året, och vad det då innebär för golfen?',
     players: [
       {
         id: "joel",
         firstname: "Joel",
         lastname: "Linde",
         nickname: "Lefty",
-        desc: "Det bästa han vet på Jorden är när Carl precis klivit ut ur duschen och har handduken lite sådär på sne."
+        desc: "En formidabel golfspelare som sällan slår ett dåligt slag. När han inte är på banan är det bästa han vet när Carl precis klivit ut ur duschen och har handduken lite sådär på sne."
       },
       {
         id: "carl",
         firstname: "Carl",
         lastname: "Blanche",
         nickname: "John Ram",
-        desc: "Han gillar sin familj, men inte nära lika mycket som han gillar att drunkna i Joels blå ögon."
+        desc: "En bitvis riktigt duktig golfare som ibland kan tilta iväg sig själv till en sämre score. Han gillar sin familj, men inte nära lika mycket som han gillar att drunkna i Joels blå ögon."
       }
     ]
   }
