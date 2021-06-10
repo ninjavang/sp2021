@@ -24,7 +24,7 @@ const teams: Team[] = [
         lastname: "Forsell",
         nickname: "Patrick Reed",
         desc: "Känd för att aldrig inte hittat sin boll när han hamnat i skogen. " +
-              "Men även känd för att slå ett och annat drömslag." +
+              "Men även känd för att slå ett och annat drömslag. " +
               "Frågan är bara om han kommer lägga de timmarna som krävs för att väcka golfguden inom sig?"
       },
       {
@@ -75,7 +75,7 @@ const teams: Team[] = [
         firstname: "Dennis",
         lastname: "Malmsten",
         nickname: "Deschambou",
-        desc: "Årets nyförvärv till SP 2021" + 
+        desc: "Årets nyförvärv till SP 2021 " + 
         "Dennis pappa slår längre än alla andras pappor i det här gänget, men gör Dennis det? Det är den stora frågan."
       }
     ]
