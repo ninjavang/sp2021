@@ -160,11 +160,11 @@ export default defineComponent({
           this.playChampions();
           await sleep(1500);
           Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
           await sleep(7000);
-          Reveal.nextFragment();
-          await sleep(1500);
-          Reveal.nextFragment();
-          await sleep(1500);
           Reveal.nextFragment();
           this.tryNext(idx, 2000);
           break;
@@ -194,7 +194,8 @@ export default defineComponent({
           Reveal.nextFragment();
           await sleep(1500);
           Reveal.nextFragment();
-
+          await sleep(1500);
+          Reveal.nextFragment();
           this.tryNext(idx, 2000);
           break;
         case 13: case 15: case 17: case 19: case 21:

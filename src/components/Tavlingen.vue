@@ -17,19 +17,14 @@
     </span>
   </section>
   <section class="__column" data-transition="zoom">
-      <h2>Hills bild</h2>
       <img class="r-stretch" src="static/img/lumine-Hills-2.jpg">
   </section>
   <section class="__column" data-transition="zoom">
-      <h2>Hills bild</h2>  
       <img class="r-stretch" src="static/img/LUMINE_Hills_Hole-13d.jpg">
   </section>
   <section class="__column">
     <span class="fragment fade-in highlight-red grow">
       Sommarpokalen
-    </span>
-    <span class="fragment fade-in">
-      Sommarpokalens första tävlingsdag
     </span>
     <span class="fragment fade-in">
       Fredag 10:20-10:40 Lumine Lakes
