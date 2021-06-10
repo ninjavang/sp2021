@@ -125,7 +125,7 @@ export default defineComponent({
           this.showText = true;
           await sleep(2500);
           this.showYear = true;
-          this.tryNext(idx, 3500);
+          await this.tryNext(idx, 3500);
           break;
         case 2:
           await sleep(1500);
@@ -136,10 +136,10 @@ export default defineComponent({
           Reveal.nextFragment();
           await sleep(1500);
           Reveal.nextFragment();
-          this.tryNext(idx, 3500);
+          await this.tryNext(idx, 3500);
           break;
         case 3:
-          this.tryNext(idx, 6000);
+          await this.tryNext(idx, 6000);
           break;
         case 4:
           await sleep(2000);
@@ -150,11 +150,11 @@ export default defineComponent({
           Reveal.nextFragment();
           await sleep(2000);
           Reveal.nextFragment();
-          this.tryNext(idx, 3000);
+          await this.tryNext(idx, 3000);
           break;
         case 5:
           this.stopAnimo();
-          this.tryNext(idx, 51000)
+          await this.tryNext(idx, 51000)
           break;
         case 6:
           this.playChampions();
@@ -164,9 +164,9 @@ export default defineComponent({
           Reveal.nextFragment();
           await sleep(1500);
           Reveal.nextFragment();
-          await sleep(7000);
+          await sleep(1500);
           Reveal.nextFragment();
-          this.tryNext(idx, 2000);
+          await this.tryNext(idx, 7000);
           break;
         case 7: case 8:
           this.tryNext(idx, 3000);
@@ -180,7 +180,7 @@ export default defineComponent({
           Reveal.nextFragment();
           await sleep(1500);
           Reveal.nextFragment();
-          this.tryNext(idx, 2000);
+          await this.tryNext(idx, 7000);
           break;
         case 10: case 11:
           this.tryNext(idx, 3000);
@@ -196,7 +196,9 @@ export default defineComponent({
           Reveal.nextFragment();
           await sleep(1500);
           Reveal.nextFragment();
-          this.tryNext(idx, 2000);
+          await sleep(1500);
+          Reveal.nextFragment();
+          await this.tryNext(idx, 2000);
           break;
         case 13: case 15: case 17: case 19: case 21:
           await sleep(1500);
@@ -205,10 +207,10 @@ export default defineComponent({
           Reveal.nextFragment();
           await sleep(3500);
           Reveal.nextFragment();
-          this.tryNext(idx, 2000);
+          await this.tryNext(idx, 2000);
           break;
         case 14: case 16: case 18: case 20: case 22:
-          this.tryNext(idx, 15000);
+          await this.tryNext(idx, 15000);
           break
         case 23:
           this.stopChampions();
@@ -220,16 +222,16 @@ export default defineComponent({
           Reveal.nextFragment();
           await sleep(1500);
           Reveal.nextFragment();
-          this.tryNext(idx, 2000);
+          await this.tryNext(idx, 2000);
           break;
         case 24:
           this.playDeschantee();
-          this.tryNext(idx, 3000);
+          await this.tryNext(idx, 3000);
           break;
         case 25: case 26: case 27:
-          this.tryNext(idx, 4000);
+          await this.tryNext(idx, 4000);
           break;
-        case 28: case 29:
+        case 28: 
           await sleep(1500);
           Reveal.nextFragment();
           await sleep(1500);
@@ -238,15 +240,35 @@ export default defineComponent({
           Reveal.nextFragment();
           await sleep(1500);
           Reveal.nextFragment();
-          this.tryNext(idx, 2000);
+          await sleep(1500);
+          Reveal.nextFragment();
+          await this.tryNext(idx, 2000);
+          break;
+        case 29:
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          await sleep(1500);
+          Reveal.nextFragment();
+          await this.tryNext(idx, 2000);
           break;
         default: break;
       }
     },
     async tryNext(idx: number, ms: number) {
+      console.log('sleeping')
       await sleep(ms);
+      console.log('slept')
       if (this.index == idx) {
-        Reveal.next();
+        console.log('moving to the right')
+        Reveal.right();
       } else {
         console.log("Index: " + idx + " didn't match expected: " + this.index);
       }
