@@ -1,12 +1,12 @@
 <template>
   <div class="app">
-    <audio autoplay="autoplay" id="music1">
+    <audio  id="music1">
       <source src="static/audio/ameno.mp3">
     </audio>
-    <audio autoplay="autoplay" id="music2">
+    <audio  id="music2">
       <source src="static/audio/desenchantee.mp3">
     </audio>
-    <audio autoplay="autoplay" id="music3">
+    <audio id="music3">
       <source src="static/audio/champions.mp3">
     </audio>
 
@@ -125,9 +125,7 @@ export default defineComponent({
           this.showText = true;
           await sleep(2500);
           this.showYear = true;
-          
           this.tryNext(idx, 3500);
-
           break;
         case 2:
           await sleep(1500);
@@ -141,7 +139,7 @@ export default defineComponent({
           this.tryNext(idx, 3500);
           break;
         case 3:
-          this.tryNext(idx, 4000);
+          this.tryNext(idx, 6000);
           break;
         case 4:
           await sleep(2000);
@@ -240,7 +238,6 @@ export default defineComponent({
           await sleep(1500);
           Reveal.nextFragment();
           this.tryNext(idx, 2000);
-          this.stopDeschentee();
           break;
         default: break;
       }

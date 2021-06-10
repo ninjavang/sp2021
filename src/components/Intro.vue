@@ -18,10 +18,12 @@
   </section>
 
   <section class="r-stretch" data-transition="fade-in" data-background-image="static/gif/tenor.gif">
-    <div class="r-stretch">
+    <div class="r-stretch" style="display: flex; flex-direction:column; align-items: center;">
       <img class="logo" data-src="static/img/logo.png"  v-show="showImage" alt="">
-      <p v-show="showText">Sommarpokalen</p>
-      <p v-show="showYear">2021</p>
+      <div style="display: flex; align-items: center;">
+        <img class="logo2" data-src="static/img/splogo.png" v-show="showText" alt="">
+        <img class="logo3" data-src="static/img/2021.png"  v-show="showYear" alt="">
+      </div>
     </div>
   </section>
 </template>
@@ -52,12 +54,23 @@ export default defineComponent({
 .logo {
   width: 50%;
 }
+.logo2 {
+  height: 160px;
+  width: 620px;
+  margin: 0;
+}
+.logo3 {
+  height: 60px;
+  width: 140px;
+  margin: 20px 0 0 0.5em;
+}
 
 .rese-section {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
+
 .intro {
   span:nth-child(1) {
     margin: 2em 0;
